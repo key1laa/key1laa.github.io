@@ -2,32 +2,85 @@
 <html>
 <head>
     <title>Website Keylla</title>
+        <style> 
+         body {
+            background-color: #cfcfcf ;
+            font-family: Verdana, sans-serif ;
+            padding: 20px ;
+            font-size: small ; 
+            color: #2b3142
+         }
+        .tabel-utama {
+            width: 800px ;
+            margin: 0 auto;
+            background-color: #f5f0ed ;
+            border-collapse: collapse;
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow:
+            0 1px 0 rgba(255, 255, 255, 0.7) inset,
+            0 18px 14px -12px rgba(6, 40, 38, 0.35),
+            0 34px 40px -20px rgba(6, 40, 38, 0.45),
+            0 60px 70px -30px rgba(6, 40, 38, 0.35);
+        }
+            .nav-box {
+                background-color: #bcd8eb;
+                text-align-last: center;
+                padding: 15;
+            }
+            .nav-box a {
+                display: inline-block ;
+                padding: 6px 15px ;
+                margin: 0 4px;
+                background-color: white;
+                color: #5385a6 ;
+                text-decoration: none ;
+                border-radius: 20px ;
+                font-size: 13px ;
+                font-weight: bold ;
+                box-shadow:
+                0 1px 0 rgba(255, 255, 255, 0.9) inset,
+                0 4px 8px rgba(6, 40, 38, 0.18),
+                0 8px 16px rgba(6, 40, 38, 0.12);
+            }
+            .konten-dalam {
+                border: none;
+                width: 100% ;
+            }
+            .sidebar-kanan {
+                background-color: #dce2ea;
+                vertical-align: top;
+                padding: 20px ;
+                border-radius: 10px ; 
+            }
+    </style>
 </head>
 <body>
     
     <body bgcolor="darkgrey" ></body>
 
-    <table border="1" width="800" cellspacing="0" cellpadding="10" align="center" bgcolor="white">
+    <table class= "tabel-utama" cellspacing="0" cellpadding="10">
         
         <tr>
             <td align="center" bgcolor ="#5385a6">
                 <h1><font color = "White">Selamat Datang di Website Keylla</font></h1>
-                <p><font color = "White">Pelan-pelan, asal tetap berjalan</font></p>
+                <p><font color = "White">It's not who i am underneath, but what i do that defines me</font></p>
             </td>
         </tr>
 
         <tr>
-             <td align="center" bgcolor ="#bcd8eb">
-                <a href="index.html">Beranda</a> | 
-                <a href="tentang-saya.html">Tentang Saya</a> | 
-                <a href="sekolahku.html">Sekolahku</a> |  
-                <a href="syair-lagu.html">syair-lagu</a> |
+             <td class="nav-box">
+                <a href="index.html">Beranda</a>  
+                <a href="tentang-saya.html">Tentang Saya</a>  
+                <a href="sekolahku.html">Sekolahku</a>   
+                <a href="syair-lagu.html">syair-lagu</a> 
             </td>
         </tr>
 
         <tr>
             <td>
-                <table border="1" width="100%" cellpadding="5">
+                <table class="konten-dalam" cellpadding="5">
                     <tr>
                         <td width="70%" valign="top">
                               <h3 align="center">Syair-Lagu</h3>
@@ -45,7 +98,7 @@ Orang pintar pembaca nasib </pre>
                         <a href="https://youtu.be/w8pjAV8u2OE?si=bAny7p6-zuv4Myas" target="_blank"> Full Lagu</a>
                         </td>
 
-                        <td width="30%" valign="top" bgcolor="#f1f1f1" height="100%">
+                        <td class="sidebar-kanan">
                             <h3>Tautan lainnya</h3>
                             <ol>
                                 <li><a href="https://www.instagram.com/smkn1tng?stkn=MWxobDNqYTZremgyYQ==" target="_blank">Instagram Nesta</a></li>
@@ -67,4 +120,4 @@ Orang pintar pembaca nasib </pre>
     </table>
 
 </body>
-</html
+</html>
